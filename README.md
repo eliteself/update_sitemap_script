@@ -46,7 +46,7 @@ Add to your GitHub Actions workflow:
 
 ```yaml
 - name: Update sitemap.xml
-  run: python3 tools/update_sitemap.py || echo "⚠️  Warning: sitemap update failed, continuing..."
+  run: python3 update_sitemap.py || echo "⚠️  Warning: sitemap update failed, continuing..."
 ```
 
 ## 📖 How It Works
@@ -187,7 +187,7 @@ All text content is properly escaped using `xml.sax.saxutils.escape()` to preven
 
 ```bash
 git add templates/new-page.html
-python3 tools/update_sitemap.py
+python3 update_sitemap.py
 ```
 
 ### "Git not available" errors
@@ -195,7 +195,7 @@ python3 tools/update_sitemap.py
 **Solution**: Use filesystem dates instead
 
 ```bash
-python3 tools/update_sitemap.py --use-filesystem
+python3 update_sitemap.py --use-filesystem
 ```
 
 ### Sitemap.xml not found
@@ -219,8 +219,6 @@ Contributions welcome! Areas for improvement:
 ## 📚 Related Tools
 
 - `cache_buster.py` - Cache busting for static assets
-- `seo_optimizer.py` - SEO content optimization
-- `analyze_website_seo.py` - Website SEO analysis
 
 ## 🔗 Resources
 
