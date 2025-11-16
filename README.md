@@ -1,6 +1,13 @@
 I wanted to share my new idea Automated Sitemap.xml Last Modification Date Updater
 beacuse i love own simple tools and powerful of lovable by me Python
 
+
+Benefits of the script:
+ - static files are served faster (NGINX can cache them)
+ - less load on the database (updates daily/weekly, not with every request)
+ - also you can run via cron automatically if need to
+ - easier debugging and logging
+
 What do you think?
 
 # update_sitemap.py
